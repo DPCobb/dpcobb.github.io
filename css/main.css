@@ -167,7 +167,7 @@ ul li a{
     color:#34495E;
     border-bottom: 3px solid #3a3d42;
 }
-#blogs article{
+article{
     margin:1%;
     text-align: center;
     background:#D2D7D3;
@@ -179,6 +179,19 @@ ul li a{
 }
 #blogs article p, #blogs article h3{
     text-align: left;
+}
+#blogs article .featuredpost{
+    position:absolute;
+    top:0;
+    left:0;
+    background:#F5D76E;
+    width:55%;
+    padding:2%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    border-radius: 0 30px 30px 0;
+
 }
 /* HEADER ============================== */
 

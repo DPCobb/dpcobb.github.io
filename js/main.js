@@ -17,7 +17,7 @@ $(document).ready(function(){
             "title":"Testimonial Layout",
             "img":"images/testimony.png",
             "link":"test",
-            "text":"<h3>What I Hope To Learn</h3><p></p><h3>How This Relates To What I Have or Will Learn in WDD</h3><p></p>"
+            "text":"<div class='featuredpost'>Featured</div><h3>What I Hope To Learn</h3><p></p><h3>How This Relates To What I Have or Will Learn in WDD</h3><p></p>"
         },
         {
             "title":"Featured Article Layout",
