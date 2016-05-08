@@ -18,6 +18,7 @@ body{
     width:100%;
     padding:0;
     overflow: hidden;
+    margin:5% auto;
 }
 
 /*----- Utility Styles -----*/
@@ -43,10 +44,37 @@ header{
     padding:0;
     margin:0 auto;
 }
+nav{
+    position:fixed;
+    top:0;
+    z-index: 100;
+    background:rgba(236,236,236, .8);
+    width:100%;
+}
 .logo-img{
-    width:5%;
+    width:3%;
     display:inline-block;
     padding:1%;
+    float:left;
+}
+ul{
+    display:inline-block;
+    float:left;
+    width:70%;
+}
+ul li{
+    list-style: none;
+    display:inline-block;
+    position:relative;
+    margin:0 2%;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 2px solid #3498DB;
+    color:inherit;
+    position:relative;
 }
 
 /*----- Intro/CTA Styles -----*/
@@ -88,13 +116,12 @@ header{
 /*----- About Section Styles -----*/
 #about{
     width:100%;
-    height:auto;
     background:#34495E;
-    background-size:50%;
     text-align: left;
     padding:10% 2%;
     color:#ececec;
     display:inline-block;
+    margin-bottom:0;
 }
 #about p{
     margin-top:0;
@@ -104,21 +131,6 @@ header{
 }
 #about h2{
     margin:0 5%;
-}
-
-/*----- Sidebar -----*/
-.sidebar{
-    width:25%;
-    padding:2.5%;
-    display:inline-block;
-    float:right;
-}
-.sidebar a{
-    text-decoration: none;
-    font-size:1.2em;
-    font-weight:800;
-    color:inherit;
-    border-bottom:3px solid #4DAF7C;
 }
 
 /*----- Blogs / Components Style -----*/
@@ -146,9 +158,8 @@ header{
     column-gap: 0px;
 }
 .blog-img{
-    width:95%;
+    width:100%;
     margin:0 auto;
-    border-radius: 10px;
 }
 #blogs h2{
     text-align: center;

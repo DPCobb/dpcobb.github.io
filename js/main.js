@@ -23,7 +23,7 @@ $(document).ready(function(){
             "title":"Featured Article Layout",
             "img":"images/newarticle.png",
             "link":"featured",
-            "text":"<h3>What I Hope To Learn</h3><p>What I liked about this layout was the combination of other componenets I picked out. This uses grids and transparent, it seems like, buttons or links. I hope from this I can learn more about grids and inputs and different ways to use them. I like the featured article layout of this componenet and how it is larger than the other articles, which is something I would like to learn how to do.</p><h3>How This Relates To What I Have or Will Learn in WDD</h3><p></p>"
+            "text":"<h3>What I Hope To Learn</h3><p>What I liked about this layout was the combination of other componenets I picked out. This uses grids and transparent, it seems like, buttons or links. I hope from this I can learn more about grids and inputs and different ways to use them. I like the featured article layout of this componenet and how it is larger than the other articles, which is something I would like to learn how to do.</p><h3>How This Relates To What I Have or Will Learn in WDD</h3><p>Again, I think this really ties into UI/UX design. Grids are an easy way to display information in a way that inheritly implies importance and are being used more and more. I think this will be an important area to not only understand but understand how to make the grids stand out and take on a unique look and style. Combining grids with other techniques from the components I choose will help to create a more enjoyable user experience and further my skillset.</p>"
         },
         {
             "title":"Newsletter Form",
