@@ -231,6 +231,7 @@ article ul li{
     #intro{
         width:100%;
         height:300px;
+        margin-top:10%;
     }
     #intro h1{
         text-align: right;
