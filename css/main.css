@@ -206,8 +206,6 @@ article ul li{
     padding:1% 2%;
     border-radius: 10px;
 }
-/* HEADER ============================== */
-
-/* ABOUT ============================== */
-
-/* COMPONENTS ============================== */
+.cssbreakdown{
+    width:90%;
+}
