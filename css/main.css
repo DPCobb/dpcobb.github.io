@@ -135,7 +135,7 @@ ul li a{
 
 /*----- Blogs / Components Style -----*/
 #blogs{
-    width:90%;
+    max-width:1120px;
     padding:2%;
     margin:5% auto;
     clear:both;
@@ -209,3 +209,5 @@ article ul li{
 .cssbreakdown{
     width:90%;
 }
+/*----- Media Querries -----*/
+@media screen and(max-width:1130px)
