@@ -14,12 +14,6 @@ body{
     font: 12pt/normal Helvetica, Arial, sans-serif;
     color:#3a3d42;
 }
-.wrapper{
-    width:100%;
-    padding:0;
-    overflow: hidden;
-    margin:5% auto;
-}
 
 /*----- Utility Styles -----*/
 .button{
@@ -84,7 +78,7 @@ ul li a{
     background:#3498DB;
     background-size:50% 100%;
     text-align: right;
-    margin:0 auto;
+    margin:5% auto;
 }
 .intro-img{
     width:50%;
@@ -100,9 +94,10 @@ ul li a{
     padding:10% 10% 0;
     margin-top:0;
 }
-#intro h3{
+#intro h2{
     text-align: right;
     padding:0 10% 10%;
+    font-size:1.2em
 }
 #intro .button{
     margin:0 10%;
@@ -129,15 +124,10 @@ ul li a{
 
 /*----- Blogs / Components Style -----*/
 #blogs{
-    width:90%;
+    width:80%;
     padding:2%;
     margin:5% auto;
     clear:both;
-}
-#blogdisplay{
-    width:90%;
-    padding:2%;
-    margin:5% auto;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -159,14 +149,14 @@ article{
     margin:1%;
     text-align: center;
     background:#D2D7D3;
-    padding:2%;
+    padding:3%;
     border-radius: 3px;
-    width:44%;
+    width:42%;
     display:inline-block;
     position: relative;
 }
 article:first-of-type{
-    width:94%;
+    width:92%;
 }
 #blogs article p, #blogs article h3{
     text-align: left;

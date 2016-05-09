@@ -35,6 +35,6 @@ $(document).ready(function(){
     //Print blogs
     $(bloglist).each(function(i){
         var blog = bloglist[i];
-        $('#blogdisplay').append('<article id="'+blog.link+'"><h2>'+blog.title+'</h2><img src="'+blog.img+'" class="blog-img" alt="'+blog.title+'"/>'+blog.text+'</article>');
+        $('#blogs').append('<article id="'+blog.link+'"><h2>'+blog.title+'</h2><img src="'+blog.img+'" class="blog-img" alt="'+blog.title+'"/>'+blog.text+'</article>');
     });
 });
