@@ -155,10 +155,8 @@ article{
 article:first-of-type{
     width:92%;
 }
-#blogs article p, #blogs article h3{
-    text-align: left;
-}
-#blogs article .featuredpost{
+article:first-of-type::before{
+    content: 'Featured';
     position:absolute;
     top:0;
     left:0;
@@ -169,7 +167,9 @@ article:first-of-type{
     font-weight: 700;
     text-align: left;
     border-radius: 0 30px 30px 0;
-
+}
+#blogs article p, #blogs article h3{
+    text-align: left;
 }
 article ul{
     text-align: left;
