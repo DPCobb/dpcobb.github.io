@@ -1,4 +1,110 @@
-/* Component Stylesheet 
+/* Component Stylesheet
 ============================================================
 ============================================================*/
+body{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4375;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 0px;
+    color:#fff;
+}
+.flexwrap{
+    max-width:100%;
+    height:auto;
+    display: -webkit-inline-grid;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+    margin:0 auto;
+}
+.flexwrap::after{
+    content:' ';
+    display:table;
+    clear:both;
+}
+.flex-item{
+    width: 28%;
+    height:200px;
+    flex:1 0 1;
+    -webkit-flex:1 0 1;
+    margin:0 0 4% 0;
+    padding: 47px 62px 62px;
+}
+.flex-lrg{
+    width: 56%;
+    height:670px;
+    flex:2 0 2;
+    -webkit-flex:2 0 2;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%),url('lg.jpg') top center no-repeat;
+    background-size:100% 100%;
+    margin:0 4% 4% 0;
+}
+article:nth-of-type(2) {
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%),url('small1.jpg') top center no-repeat;
+}
+article:nth-of-type(3){
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%),url('small2.jpg') top center no-repeat;
+}
+article{
+    float:left;
+    display:inline-block;
+    margin:0;
+    position: relative;
+}
+article a{
+    color:inherit;
+    text-decoration: none;
+}
+article ul{
+    padding:0;
+    list-style-type: none;
+}
+article ul li{
+    display:inline-block;
+    font-weight:800;
+    text-transform: uppercase;
+    margin-right:2%;
+    line-height: 1.3;
+    font-size: 12px;
+}
+article .button{
+    font-weight:800;
+    border:2px solid #fff;
+    padding:6px 9px 6px 11px;
+    margin-bottom:15px;
+    letter-spacing: 0.6px;
+    font-size: 12px;
+}
 
+.flex-lrg h2{
+    font-size: 40px;
+    font-weight: 800;
+    margin:30px 0 17px 0;
+
+}
+.flex-item h2{
+    font-size: 20px;
+}
+.links{
+    margin:50px;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.flex-item .links{
+    margin:20px;
+}
+
+article .button:hover{
+    border:2px solid #eb43a6;
+}
+
+.flex-lrg h2:hover, ul li:hover, .flex-item h2:hover{
+    color:#eb43a6
+}
