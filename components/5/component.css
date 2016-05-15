@@ -1,4 +1,128 @@
-/* Component Stylesheet 
+/* Component Stylesheet
 ============================================================
 ============================================================*/
+body{
+    background:#31383a;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section{
+    max-width:680px;
+    text-align: center;
+    padding:15px 40px;
+    margin:0 auto;
+    position: relative;
+}
+section h1{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+    color:#ffffff;
+    text-transform: uppercase;
+    display:block;
+}
+section h1::after{
+    background: #f14d4d;
+    height: 2px;
+    width:75px;
+    content:' ';
+    top:80px;
+    left:44%;
+    position:absolute;
+}
+section h2{
+    color:#93989a;
+    text-transform: uppercase;
+    margin:60px auto 70px;
+}
+section h3{
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0px;
+    color:#fff;
+    margin:25px auto;
+}
+section p{
+    max-width:90%;
+    margin:0 auto;
+    font-weight: 300;
+    color: #787e80;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
 
+/*
+I wanted to add the < and > with ::before and ::after but couldn't figure out how to add the :hover effects.
+section h2::before{
+    content:"<";
+    font-size: 69px;
+    line-height: 65px;
+    font-family: 'Astloch', cursive;
+    width:70px;
+    height:70px;
+    position:absolute;
+    z-index: 100;
+    top:50%;
+    left:50px;
+    color:#fff;
+}
+section h2::after{
+    content:">";
+    font-size: 69px;
+    line-height: 65px;
+    font-family: 'Astloch', cursive;
+    width:70px;
+    height:70px;
+    position:absolute;
+    z-index: 100;
+    top:50%;
+    right:50px;
+    color:#fff;
+}*/
+.linkhov{
+    font-size: 69px;
+    line-height: 65px;
+    font-family: 'Astloch', cursive;
+    width:70px;
+    height:70px;
+    position:absolute;
+    z-index: 100;
+    top:45%;
+    left:50px;
+    color:#fff;
+}
+.linkhovright{
+    font-size: 69px;
+    line-height: 65px;
+    font-family: 'Astloch', cursive;
+    width:70px;
+    height:70px;
+    position:absolute;
+    z-index: 100;
+    top:45%;
+    right:50px;
+    color:#fff;
+}
+.linkhov:hover, .linkhovright:hover{
+    color:#f14d4d;
+    cursor:pointer;
+}
+section button{
+    border:2px solid #fff;
+    padding:15px 35px;
+    margin:60px auto 10px;
+    text-transform: uppercase;
+    background:transparent;
+    font-weight: 400;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+section button:hover{
+    background:#f14d4d;
+    border:2px solid #f14d4d;
+     cursor: pointer;
+}

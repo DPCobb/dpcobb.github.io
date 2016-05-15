@@ -80,6 +80,7 @@ article .button{
     margin-bottom:15px;
     letter-spacing: 0.6px;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .flex-lrg h2{

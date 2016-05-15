@@ -28,6 +28,20 @@ body{
     display:inline-block;
     text-align: center;
 }
+.button-lrg{
+    text-decoration: none;
+    border:none;
+    margin:10% auto 5%;
+    width:20%;
+    padding:2% 5%;
+    background:#22313F;
+    color:#ececec;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display:inline-block;
+    text-align: center;
+    font-size: .75em;
+}
 
 /*----- Header and Nav Styles -----*/
 header{
