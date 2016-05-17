@@ -5,27 +5,18 @@
 header{
     width:100%;
     height:1000px;
-    background: url('content.jpg')top center no-repeat;
-    position: relative;
-    font: 300 16px/26px Roboto, sans-serif;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%,rgba(0,0,0,0.2) 100%) no-repeat,linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(0,0,0,0.1) 100%) no-repeat, url('slide_1.jpg')top center no-repeat,url('content.jpg')top center no-repeat;
+    background-size:82% 100%, 100% 800px, 100% 800px, cover;
+    font: 300 16px/26px 'Roboto', sans-serif;
+
 }
 .cta{
-    width:100%;
+    width:95%;
     height:800px;
-    background:linear-gradient(to bottom, rgba(0,0,0,.1) 0%,rgba(0,0,0,0.1) 100%), url('slide_1.jpg') top center no-repeat;
-    background-size:cover;
+    padding:15% 0 0 5%;
+    position:relative;
 }
-.background{
-    width:85%;
-    height:800px;
-    background:linear-gradient(to bottom, rgba(0,0,0,.2) 0%,rgba(0,0,0,0.2) 100%);
-    z-index: 10;
-    position:absolute;
-    top:0;
-    left:0;
-    padding-left:5%;
-}
-.background p:first-of-type{
+h1{
     color: #ecdd62;
     margin: 0 0 20px 0;
     line-height: 30px;
@@ -34,9 +25,8 @@ header{
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top:21%;
 }
-.background p:nth-of-type(2){
+h2{
     color: rgb(255,255,255);
     margin: 0 0 30px 0;
     padding: 0 0 30px 0;
@@ -45,7 +35,11 @@ header{
     font-weight: 700;
     text-transform: uppercase;
 }
-.background p:nth-of-type(3){
+h2:first-of-type{
+    margin:0;
+    padding:0;
+}
+p{
     color: #d0cdcf;
     line-height: 22px;
     font-size: 16px;
@@ -55,7 +49,7 @@ header{
     font-weight: 300;
     font-style: italic;
 }
-.background p:nth-of-type(3)::before{
+p::before{
     background: #ecdd62;
     height: 6px;
     width:125px;
@@ -63,19 +57,29 @@ header{
     top:-30%;
     position:absolute;
 }
-.circle, .active{
+ul{
+    position:absolute;
+    bottom:50px;
+    display:block;
+    width:100%;
+    font-size:0;
+}
+ul li{
     border-radius: 50%;
 	width: 20px;
 	height: 20px;
     background:#fff;
     display:inline-block;
-    margin:20% .5% 0 0;
+    margin:0 .5% 0 0;
+}
+ul li a{
+    display:block;
 }
 .active{
     background:#ecdd62;
 }
 .banner{
-    width:85%;
+    width:82%;
     height:200px;
     background:url('bg_1.jpg')top center no-repeat;
 }
