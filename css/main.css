@@ -4,7 +4,7 @@
     5-5-2016
 */
 
-
+@import 'animations.css';
 /*----- Main Body Style -----*/
 body{
     max-width:1900px;
@@ -27,6 +27,8 @@ body{
     text-transform: uppercase;
     display:inline-block;
     text-align: center;
+    transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
 }
 .button-lrg{
     text-decoration: none;
@@ -41,6 +43,11 @@ body{
     display:inline-block;
     text-align: center;
     font-size: .75em;
+    transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+}
+.button:hover, .button-lrg:hover{
+    background:#091B2B;
 }
 
 /*----- Header and Nav Styles -----*/
@@ -59,7 +66,7 @@ nav{
 .logo-img{
     width:3%;
     display:inline-block;
-    padding:1%;
+    padding:5px;
     float:left;
 }
 ul{
@@ -72,6 +79,12 @@ ul li{
     display:inline-block;
     position:relative;
     margin:0 2%;
+    width:100px;
+    text-align: center;
+}
+section ul li{
+    width:70%;
+    text-align: left;
 }
 ul li a{
     text-decoration: none;
@@ -80,6 +93,13 @@ ul li a{
     border-bottom: 2px solid #3498DB;
     color:inherit;
     position:relative;
+    display:block;
+    padding:5px 10px;
+    transition-duration: 700ms;
+    -webkit-transition-duration: 700ms;
+}
+ul li a:hover{
+    background-color:rgba(52,152,219,.6);
 }
 
 /*----- Intro/CTA Styles -----*/
@@ -90,6 +110,7 @@ ul li a{
     background-size:50% 100%;
     text-align: right;
     margin:5% auto;
+    animation: fadein 700ms ease-in;
 }
 .intro-img{
     width:50%;
@@ -159,7 +180,7 @@ ul li a{
 article{
     margin:1%;
     text-align: center;
-    background:#D2D7D3;
+    background:linear-gradient(to bottom, rgba(210,215,211,1) 0%,rgba(177,179,177,.6) 100%), #D2D7D3;
     padding:3%;
     border-radius: 3px;
     width:42%;
@@ -181,6 +202,8 @@ article:first-of-type::before{
     font-weight: 700;
     text-align: left;
     border-radius: 0 30px 30px 0;
+    border-right: 2px solid #E3C766;
+    border-bottom: 2px solid #E3C766;
 }
 #blogs article p, #blogs article h3{
     text-align: left;
@@ -222,15 +245,34 @@ article ul li{
     }
 }
 @media screen and (max-width:650px){
+    nav{
+        position:relative;
+        text-align: center;
+        display:block;
+    }
+    ul{
+        width:90%;
+        margin:10px auto;
+        float:none;
+    }
+    .logo-img{
+        width:25%;
+        display:block;
+        margin:0 auto;
+        float:none;
+    }
     #intro{
         width:100%;
-        height:300px;
-        margin-top:10%;
+        height:250px;
+        position: relative;
     }
     #intro h1{
         text-align: right;
         font-size:2em;
         padding:5% 5% 0;
+    }
+    #intro h2{
+        padding:0 5% 2%;
     }
     .button{
         width:20%;

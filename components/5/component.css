@@ -1,9 +1,11 @@
 /* Component Stylesheet
 ============================================================
 ============================================================*/
+@import '../../css/animations.css';
 body{
     background:#31383a;
     font-family: 'Roboto Condensed', sans-serif;
+    animation: fadein 2000ms;
 }
 section{
     max-width:680px;

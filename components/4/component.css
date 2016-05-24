@@ -1,7 +1,10 @@
 /* Component Stylesheet
 ============================================================
 ============================================================*/
-
+@import '../../css/animations.css';
+body{
+    animation:fadein 2000ms;
+}
 header{
     width:100%;
     height:1000px;

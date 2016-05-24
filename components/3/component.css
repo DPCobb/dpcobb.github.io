@@ -1,6 +1,10 @@
 /* Component Stylesheet
 ============================================================
 ============================================================*/
+@import '../../css/animations.css';
+body{
+    animation:fadein 2000ms;
+}
 .flexwrap{
     max-width:100%;
     height:800px;
