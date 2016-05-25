@@ -94,13 +94,13 @@ article .button{
 .flex-item h2{
     font-size: 20px;
 }
-.links{
+.flexwrap article nav{
     margin:50px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.flex-item .links{
+.flexwrap .flex-item nav{
     margin:20px;
 }
 
@@ -110,4 +110,29 @@ article .button:hover{
 
 .flex-lrg h2:hover, ul li:hover, .flex-item h2:hover{
     color:#eb43a6
+}
+@media screen and (max-width:950px){
+    .flex-lrg{
+        width:100%;
+        float:none;
+        margin:0 auto 4% auto;
+    }
+    .flex-item{
+        float:none;
+        width:25%;
+    }
+    article.flex-item {
+        margin-right:5%;
+    }
+    article.flex-item:last-of-type{
+        margin-right:0;
+    }
+}
+@media screen and (max-width:950px){
+    .flex-item{
+        width:70%;
+    }
+    article.flex-item{
+        margin:4% auto;
+    }
 }

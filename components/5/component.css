@@ -55,34 +55,6 @@ section p{
     letter-spacing: 0px;
 }
 
-/*
-I wanted to add the < and > with ::before and ::after but couldn't figure out how to add the :hover effects.
-section h2::before{
-    content:"<";
-    font-size: 69px;
-    line-height: 65px;
-    font-family: 'Astloch', cursive;
-    width:70px;
-    height:70px;
-    position:absolute;
-    z-index: 100;
-    top:50%;
-    left:50px;
-    color:#fff;
-}
-section h2::after{
-    content:">";
-    font-size: 69px;
-    line-height: 65px;
-    font-family: 'Astloch', cursive;
-    width:70px;
-    height:70px;
-    position:absolute;
-    z-index: 100;
-    top:50%;
-    right:50px;
-    color:#fff;
-}*/
 .linkhov{
     font-size: 69px;
     line-height: 65px;

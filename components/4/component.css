@@ -13,7 +13,7 @@ header{
     font: 300 16px/26px 'Roboto', sans-serif;
 
 }
-.cta{
+header section{
     width:95%;
     height:800px;
     padding:15% 0 0 5%;
