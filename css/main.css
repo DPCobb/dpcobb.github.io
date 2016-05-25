@@ -7,7 +7,6 @@
 @import 'animations.css';
 /*----- Main Body Style -----*/
 body{
-    max-width:1900px;
     background:#ececec;
     margin:0 auto;
     padding:0;
@@ -31,22 +30,12 @@ body{
     -webkit-transition-duration: 500ms;
 }
 .button-lrg{
-    text-decoration: none;
-    border:none;
     margin:10% auto 5%;
-    width:20%;
+    width:25%;
     padding:2% 5%;
-    background:#22313F;
-    color:#ececec;
-    border-radius: 10px;
-    text-transform: uppercase;
-    display:inline-block;
-    text-align: center;
     font-size: .75em;
-    transition-duration: 500ms;
-    -webkit-transition-duration: 500ms;
 }
-.button:hover, .button-lrg:hover{
+.button:hover{
     background:#091B2B;
 }
 
@@ -82,10 +71,6 @@ ul li{
     width:100px;
     text-align: center;
 }
-section ul li{
-    width:70%;
-    text-align: left;
-}
 ul li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -112,7 +97,7 @@ ul li a:hover{
     margin:5% auto;
     animation: fadein 700ms ease-in;
 }
-.intro-img{
+#intro img{
     width:50%;
     height:100%;
     float:left;
@@ -167,9 +152,12 @@ ul li a:hover{
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.blog-img{
+#blogs img{
     width:100%;
     margin:0 auto;
+}
+#blogs img[src*="testimonycss"]{
+    width:90%;
 }
 #blogs h2{
     text-align: center;
@@ -178,14 +166,17 @@ ul li a:hover{
     border-bottom: 3px solid #3a3d42;
 }
 article{
-    margin:1%;
+    margin:1.1%;
     text-align: center;
     background:linear-gradient(to bottom, rgba(210,215,211,1) 0%,rgba(177,179,177,.6) 100%), #D2D7D3;
     padding:3%;
     border-radius: 3px;
-    width:42%;
+    width:41.5%;
     display:inline-block;
     position: relative;
+    border-right:2px solid #B1B3B1;
+    border-bottom:2px solid #B1B3B1;
+    box-shadow:2px 3px 7px #B1B3B1;
 }
 article:first-of-type{
     width:92%;
@@ -209,20 +200,23 @@ article:first-of-type::before{
     text-align: left;
 }
 article ul{
-    text-align: left;
+    float:none;
+    width:100%;
+    padding:0;
 }
 article ul li{
+    text-align: left;
     display:block;
+    padding:3px 0;
+    width:100%;
+    margin:0 auto;
 }
 .code{
     text-transform: uppercase;
     font-family:monospace;
     background:#fff;
-    padding:.5% 1%;
+    padding:2px 1%;
     border-radius: 10px;
-}
-.cssbreakdown{
-    width:90%;
 }
 /*----- Media Querries -----*/
 @media screen and (max-width:880px){
@@ -239,6 +233,9 @@ article ul li{
     }
     .button{
         width:15%;
+    }
+    .button-lrg{
+        width:25%;
     }
     #blogs article:not(:first-of-type) h2{
         font-size:1.5em;
