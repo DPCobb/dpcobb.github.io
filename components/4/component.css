@@ -81,8 +81,22 @@ ul li a{
 .active{
     background:#ecdd62;
 }
-.banner{
+header article{
     width:82%;
     height:200px;
     background:url('bg_1.jpg')top center no-repeat;
+}
+@media screen and (max-width:650px){
+    header{
+        height:800px;
+    }
+    header section{
+        width:95%;
+        height:600px;
+        padding:15% 0 0 5%;
+        position:relative;
+    }
+    header article{
+        width:100%;
+    }
 }

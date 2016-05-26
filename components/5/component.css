@@ -100,3 +100,16 @@ section button:hover{
     border:2px solid #f14d4d;
      cursor: pointer;
 }
+@media screen and (max-width:650px){
+    section{
+        max-width:100%;
+        text-align: center;
+        padding:15px 40px;
+        margin:0 auto;
+        position: relative;
+    }
+    section img{
+        width:50%;
+        margin:0 auto;
+    }
+}

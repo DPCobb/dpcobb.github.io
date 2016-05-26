@@ -94,3 +94,14 @@ section p{
         width:30%;
     }
 }
+@media screen and (max-width:650px){
+    input[type="email"]{
+        width: 40%;
+    }
+    input[type="submit"]{
+        width:40%;
+    }
+    form{
+        width: calc(100% - 20px);
+    }
+}
