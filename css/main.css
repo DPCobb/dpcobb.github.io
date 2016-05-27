@@ -52,7 +52,7 @@ nav{
     background:rgba(236,236,236, .8);
     width:100%;
 }
-.logo-img{
+img[alt='dclogo']{
     width:3%;
     display:inline-block;
     padding:5px;
@@ -97,7 +97,7 @@ ul li a:hover{
     margin:5% auto;
     animation: fadein 700ms ease-in;
 }
-#intro img{
+img[alt='DC image']{
     width:50%;
     height:100%;
     float:left;
@@ -120,7 +120,7 @@ ul li a:hover{
     margin:0 10%;
 }
 /*----- About Section Styles -----*/
-#about{
+footer{
     width:96%;
     background:#34495E;
     text-align: left;
@@ -129,13 +129,13 @@ ul li a:hover{
     display:inline-block;
     margin-bottom:0;
 }
-#about p{
+footer p{
     margin-top:0;
     font-size:1.2em;
     width:90%;
     padding:5%;
 }
-#about h2{
+footer h2{
     margin:0 5%;
 }
 
@@ -196,7 +196,7 @@ article:first-of-type::before{
     border-right: 2px solid #E3C766;
     border-bottom: 2px solid #E3C766;
 }
-#blogs article p, #blogs article h3{
+#blogs article p, #blogs article h3, #blogs article h4{
     text-align: left;
 }
 article ul{
@@ -252,7 +252,7 @@ article ul li{
         margin:10px auto;
         float:none;
     }
-    .logo-img{
+    img[alt='dclogo']{
         width:25%;
         display:block;
         margin:0 auto;
